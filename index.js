@@ -6,7 +6,7 @@ function getEmbeddedPlayer(url, height, width){
     var output = '';
     var youtubeUrl = url.match(/watch\?v=([a-zA-Z0-9\-_]+)/);
     var vimeoUrl = url.match(/^https?:\/\/(www\.)?vimeo\.com\/(clip\:)?(\d+).*$/);
-    var wistiaUrl = url.match(/^https?:\/\/(www\.)?wistia\.com\/(medias\:)?(\d+).*$/);
+    var wistiaUrl = url.match(/^https?:\/\/(www\.)?wistia\.com\/(medias\:)?(\w+).*$/);
 
     var style = "border: none;position: absolute;top: 0;left: 0;width: " + width + ";height: " + height;
 
